@@ -1,32 +1,126 @@
+
+
 body{
-   
-  font-family: oswald;
-  background-size:70em;
+  background-size:1300px,cover,contain;
   background-attachment:fixed;
+  font-family:alegreya, oswald, monospace, alegreya sans;
   }
-
-h1  {
-
-   font-family: oswald;
-  font-size:40px;
-   margin-left: 5em;
-     margin-bottom:15em;
-       margin-top:6em;
-      color:white;
-  }
-p {
-  padding:3em;
-background:black;
-color:white;
-font-family: alegreya;
-width: 100px 4px;
-  text-align:justify;
+.container {
+  display: grid;
+  grid-template-columns: minmax(auto, 240px) 1fr;
+  grid-template-rows: 100px auto 100px;
+  max-width: 960px;
+  height: 100vh;
+  margin: auto;
 }
-img { margin-left:10em;
-    size:90px;}
+.container > * {
+  min-height: 100px;
+  min-width: 200px;
+  padding: 1rem;
+  color:white;
+  font-size: 1.5vw;
+}
+.logo {
+  grid-column: 1/2;
+  grid-row: 1/2;
+  font-size:6vw;
+  
+}
+.navigation {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  background: #4A0606;
+  opacity:0.9;
+  font-size:2.5vw;
+    font-family:monospace;
+  color:white;
+  position: sticky;
+  top: 0vw;
+  margin-top:0em;
 
+  margin-left:0em;
+}
+.sidebar {
+  grid-column: 1/2;
+  grid-row: 2/3;
+  background:;
+  color:white;
+  position: fixed;
+top: 6.2rem;
+left: 0rem;
+ opacity:1; font-weight:bold;
+  font-size:2vw;
+  widht:3vw;
+
+}
+.main {
+  grid-column: 2/3;
+  grid-row: 2/3;
+  background: #03043B;
+  opacity:0.4;
+  
+}
+h2 {
+   font-family: monospace;
+   font-weight:bold;
+   margin-top:20vw;
+   margin-bottom:20vw;
+   font-size:4vw;
+   margin-left:42vw;
+   margin-right:40vw;
+   margin-bottom:20vw;
+   color:#BDBDE8;
+   color:white;
+   transition: color 10s linear;
+  }
+ 
 a {
-  background: blue;
+  color:#C4AAE8;
+  font-size:2vw;
+  text-decoration:none;
+}
+a:hover { text-decoration:none;
+    color:white;
+    font-size:2vw;
+}
+  
+br {
+    margin-bottom:2vw;
+}
+  
+p {
+  border-radius:0.2vw;
+  padding:5vw;
+  background:#050F2C;
+  color:white;
+  text-align:justify;
+  max-width:40vw;
+  min-width:100px;
+  margin-left:35vw;
+  margin-right:3vw;
+  margin-bottom:15vw;
+  margin-top:15vw;
+  font-family:monospace;
+  font-weight:bold;
+  opacity:0.9;
+  font-size:1em;
+}
+.p1 {
+    background:transparent;
+    font-size:2vw;
+    max-width:55vw;
+    font-weight:normal;
+ margin-left:27.5vw;
+  margin-right:3vw;}
+
+.p2 {background-color:black;}
+img { 
+  max-width:40vw;
+  margin-left:35vw;
+  margin-right:3vw;
+  margin-bottom:10vw;
+}
+boton1 {
   font-color: white;
   margin-left: 17em;
   border-radius: 0.2em;
@@ -34,36 +128,75 @@ a {
   color: white;
   text-decoration: none;
   }
-h4 {
-   font-family: oswald;
-   font-size:2em;
-   margin-left: 7em;
-   margin-bottom:15em;
-   margin-top:6em;
-   color:white;}
+img {
+  margin-right:30vw;
+  margin-left:40vw;
+  width:30vw;
+}
+p3 { display: grid;
+   grid-template-columns: repeat(4, 1fr)}
 
-{ background-color:white;}
-   display: grid;
-   grid-template-columns:repeat(4,1fr);
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  display: grid;
+  grid-template-columns: minmax(auto, 240px) 1fr;
+  grid-template-rows: 100px auto 100px;
+  max-width: 960px;
+  height: 100vh;
+  margin: auto;
+}
+.container > * {
+  min-height: 100px;
+  min-width: 200px;
+  padding: 1rem;
+}
+.slider-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  overflow-x: scroll;
+}
 
+.slider-container img {
+  flex: 0 0 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.slider-container {
+  display: flex;
+  width: 80%;
+  height: 100vh;
+  overflow-x: scroll
+    
+  scroll-snap-type: x mandatory;
+}
 
-   .content {
-  
-  }
-  div { 
-    text-align: center;
-    max-width: 600px;
-    margin-left: auto;
-    margin-right: auto;
-  }
-  a {
-    background-color: black;
-    padding: 10px 30px;
-    color: white;
-    border-radius: 10em;
-  }
-  button {
-    background-color: black;
-    padding: 10px 30px;
-    color: white;
-    border-radius: 10em;}
+.slider-container img {
+  flex: 0 0 100%;
+  width: 100%;
+  object-fit: cover;
+
+  /* Vamos a añadir esto 👇 */
+  scroll-snap-align: center;
+}
+.pult{
+  margin-top:0em;
+  background-color:transparent;
+  font-size:2vw;
+}
+.footer {
+  grid-column: 1/3;
+  grid-row: 3/4;
+  background: #C2081B;
+  font-family:arial;
+  font-weight:bold;
+  color:black;
+  max-widht:20vw;
+}
+.contacto{
+  color:black;
+}
