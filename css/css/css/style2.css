@@ -43,14 +43,13 @@ body{
 .sidebar {
   grid-column: 1/2;
   grid-row: 2/3;
-  background:;
   color:white;
   position: fixed;
 top: 6.2rem;
 left: 0rem;
  opacity:1; font-weight:bold;
   font-size:2vw;
-  widht:3vw;
+  size:3vw;
 
 }
 .main {
@@ -121,7 +120,7 @@ img {
   margin-bottom:10vw;
 }
 boton1 {
-  font-color: white;
+  color: white;
   margin-left: 17em;
   border-radius: 0.2em;
   padding: 7px 20px;
@@ -171,8 +170,7 @@ p3 { display: grid;
   width: 80%;
   height: 100vh;
   overflow-x: scroll
-    
-  scroll-snap-type: x mandatory;
+  scroll-snap-type x mandatory;
 }
 
 .slider-container img {
@@ -195,7 +193,7 @@ p3 { display: grid;
   font-family:arial;
   font-weight:bold;
   color:black;
-  max-widht:20vw;
+  max-width:20vw;
 }
 .contacto{
   color:black;
